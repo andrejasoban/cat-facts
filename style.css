@@ -12,8 +12,8 @@ html {
 .container {
     height: 100%;
     display: flex;
-    justify-content: center; /* Justify se odnosi na x-os centriranje (lijevo desno) */
-    align-items: center; /* Align items se odnosi na y-os centriranje (gore dolje) */
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(iris.svg);
     background-repeat: no-repeat;
     background-size: cover;
