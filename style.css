@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Justify se odnosi na x-os centriranje (lijevo desno) */
+    align-items: center; /* Align items se odnosi na y-os centriranje (gore dolje) */
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(iris.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app {
+    height: 80%;
+    width: 32.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.4);
+    border: 1px solid #f1f1f1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: #f497b3;
+    margin-bottom: 2rem;
+    margin-top: 2.25rem;
+}
+
+.primary-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.25rem;
+}
+
+.primary-btn {
+    padding: 1rem 2.5rem;
+    background-color: #f497b3;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 23px;
+    border: 1px solid #f497b3;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.075rem;
+}
+
+.primary-btn:hover {
+    background-color: #e57597;
+}
+
+.fact-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.fact {
+    display: flex;
+    padding: 1.15rem;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 6px 0.5px rgba(200, 200, 200, 0.3);
+    -moz-box-shadow: 0px 0px 6px 0.5px rgba(200, 200, 200, 0.3);
+    box-shadow: 0px 0px 6px 0.5px rgba(200, 200, 200, 0.3);
+    border: 1px solid #f1f1f1;
+    background-color: #f6f6f6;
+    margin-bottom: 1.25rem;
+    margin-left: 2em;
+    margin-right: 2rem;
+}
+
+.fact-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-top: 0.25rem;
+}
+
+.fact-info {
+    flex: 1;
+    margin-left: 0.75rem;
+}
+
+.info-title {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    color: #585858;
+}
+
+.user {
+    color: #f497b3;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.fact-copy-and-upvotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.copy-icon {
+    font-size: 1.15rem;
+    color: #bababa;
+    cursor: pointer;
+}
+
+.fact-upvotes {
+    font-size: 0.7rem;
+    color: #bebebe;
+}
+
+/* BREAKPOINTS */
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+    }
+
+    .app {
+        min-height: 100%;
+        height: auto;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .fact-container {
+        overflow-y: visible;
+    }
+}
